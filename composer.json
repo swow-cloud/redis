@@ -1,0 +1,50 @@
+{
+  "name": "swow-cloud/redis",
+  "description": "General purpose rate limiter implementation.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "swow-cloud",
+    "redis"
+  ],
+  "authors": [
+    {
+      "name": "heping",
+      "email": "84705412@qq.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^8.0",
+    "ext-redis": "*",
+    "hyperf/contract": "~2.2.0",
+    "hyperf/pool": "~2.2.0",
+    "hyperf/utils": "~2.2.0",
+    "psr/container": "^1.0|^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SwowCloud\\Redis\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SwowCloud\\Redis\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "test": "phpunit --colors=always",
+    "cs-fix": "php-cs-fixer fix --config=.php_cs",
+    "stan": "phpstan analyse"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0.x-dev"
+    }
+  },
+  "version": "dev-master"
+}
