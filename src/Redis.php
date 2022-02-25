@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace SwowCloud\Redis;
 
-use Hyperf\Utils\Context;
+use Hyperf\Context\Context;
 use SwowCloud\Redis\Exception\InvalidRedisConnectionException;
 use SwowCloud\Redis\Pool\PoolFactory;
 
